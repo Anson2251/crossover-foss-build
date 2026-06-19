@@ -86,6 +86,7 @@ GDI       → winemac.drv → Metal (via CAMetalLayer)
 
 ## Notes
 
+- **Do not open issues here.** Report bugs to [CodeWeavers](https://www.codeweavers.com/support/) or [DXMT](https://github.com/3Shain/dxmt)
 - This build includes CodeWeavers patches (d3dmetal compatibility layer, msync)
 - `wine --version` reports `wine-11.0`
 - Wordpad and other GDI apps work **ONLY** when DXMT is installed
