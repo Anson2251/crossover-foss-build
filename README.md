@@ -4,6 +4,8 @@ CrossOver FOSS 26.2.0 (Wine 11.0) base with DXMT support.
 
 Built from [CodeWeavers CrossOver FOSS sources](https://www.codeweavers.com/crossover/source).
 
+`cxbuilder.sh` is modified from [101arrowz/cxbuilder](https://github.com/101arrowz/cxbuilder).
+
 ## Requirements
 
 - **DXMT** — a required Metal-based D3D11/10 implementation.  
