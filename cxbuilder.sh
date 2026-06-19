@@ -6,8 +6,7 @@
 set -e
 
 reset_ifs() {
-    IFS='
-'
+    IFS="$(printf ' \t\n')"
 }
 
 reset_ifs
