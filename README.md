@@ -1,4 +1,4 @@
-# Wine + DXMT Build for macOS
+# CrossOver FOSS Build for macOS
 
 CrossOver FOSS 26.2.0 (Wine 11.0) base with DXMT support.
 
@@ -16,7 +16,7 @@ Built from [CodeWeavers CrossOver FOSS sources](https://www.codeweavers.com/cros
 ## Build
 
 ```sh
-./cxbuilder.sh --no-gptk --no-dxvk
+./cxbuilder.sh -w ./<source dir>/wine --no-gptk --no-dxvk --out ./build <source dir>
 ```
 
 The script automatically fetches x86_64 dependencies via Homebrew bottles and builds Wine. After the build completes, the output is in `build/`.
