@@ -507,7 +507,7 @@ if test $fetch_deps = 1; then
     fi
 
     brew_build_deps="bison mingw-w64 pkgconf"
-    brew_rt_deps="freetype gettext gnutls gstreamer sdl2-compat"
+    brew_rt_deps="freetype gettext gnutls gstreamer sdl2-compat krb5 libusb"
     if test $is_macos = 1; then
         brew_rt_deps="$brew_rt_deps molten-vk"
     fi
@@ -941,10 +941,10 @@ build_wine() {
     # TODO: make non-macOS specific
     wineconf_args="--disable-option-checking --disable-tests --enable-archs=i386,x86_64 --without-alsa \
     --without-capi --with-coreaudio --with-cups --without-dbus --without-fontconfig --with-freetype \
-    --with-gettext --without-gettextpo --without-gphoto --with-gnutls --without-gssapi --with-gstreamer \
-    --with-inotify --without-krb5 --with-mingw --without-netapi --without-opencl --without-opengl --without-oss \
+    --with-gettext --without-gettextpo --without-gphoto --with-gnutls --with-gssapi --with-gstreamer \
+    --with-inotify --with-krb5 --with-mingw --without-netapi --without-opencl --without-opengl --without-oss \
     --with-pcap --with-pcsclite --with-pthread --without-pulse --without-sane --without-sdl --without-udev \
-    --with-unwind --without-usb --without-v4l2 --with-vulkan --without-wayland --without-x $CXB_CONF_ARGS"
+    --with-unwind --with-usb --without-v4l2 --with-vulkan --without-wayland --without-x $CXB_CONF_ARGS"
 
     for d in "$wine_conf_dir" "$wine_build_dir" "$wine_include_dir"; do
         if test ! -d "$d"; then
